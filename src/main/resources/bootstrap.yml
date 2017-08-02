@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      profile: development
+      server:
+        native:
+          search-locations: classpath:/config-repo
+        #prefix: /config
+        bootstrap: true
+  application:
+    name: config-server
